@@ -1,0 +1,9 @@
+<footer class="px-4 bg-surface-container-lowest text-on-surface">
+  <div class="max-w-screen-xl mx-auto py-4">
+    <p class="text-sm font-bold mb-2">
+      {% block content_footer %}
+      © {{ now() | date(format="%Y") }} All rights reserved.
+      {% endblock %}
+    </p>
+  </div>
+</footer>
